@@ -37,7 +37,7 @@ compile_source() {
   if [ ! -f $CACHE_DIR/$ARCHIVE_DIR/haproxy ]; then
     echo "Compiling $ARCHIVE_DIR..."
     cd $CACHE_DIR/$ARCHIVE_DIR
-    make TARGET=linux-glibc USE_OPENSSL=1 USE_ZLIB=1 USE_QUIC=1
+    make TARGET=linux-glibc USE_OPENSSL=1 USE_ZLIB=1
   fi
 }
 
